@@ -32,9 +32,14 @@ git clone https://github.com/wzhoudargon/minimax-h3-prompt.git ~/.codex/skills/m
 ```bash
 python3 scripts/validate_prompt.py prompt.txt --mode I2VA --duration 8 --image-count 1
 python3 scripts/test_validate_prompt.py
+python3 scripts/test_studio_batch.py
 ```
 
 如已确认当前部署的字符上限，可添加 `--max-chars`。检查通过仅代表结构合格，不证明动作合理、台词准确、媒体有效或生成声音通过验收。
+
+## H3 Studio 批量输入
+
+工作台只识别行首的 `数字秒` 来设置每条时长，正文时间不生效。参见 [工作台适配](references/studio.md)，使用 `scripts/export_studio_batch.py` 从标准原稿与逐条时长表导出。通用模型提示词保持原格式；单条生成仍需设置滑块。
 
 ## 内容与依据
 
@@ -43,6 +48,6 @@ python3 scripts/test_validate_prompt.py
 - [对白与声音](references/sound.md)：声音路线及串读排查。
 - [来源与验证范围](references/sources.md)：出处和未核实部分。
 
-本版本通过 Skill 结构检查、6组回归测试及16条既有单图提示词格式检查；未完成四种模式的真实生成测试。模型规格和部署能力请以当前官方资料及实际入口为准。
+本版本通过 Skill 结构检查、6组通用格式测试、7组工作台导出测试及16条既有单图提示词格式检查；未完成四种模式的真实生成测试。模型规格和部署能力请以当前官方资料及实际入口为准。
 
 这是独立整理的社区 Skill，不是 MiniMax 官方产品；不分发完整手册或第三方 Skill。

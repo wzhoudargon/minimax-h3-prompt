@@ -24,7 +24,7 @@ L2VA：只有尾帧，不虚构首帧引用：
 How the reference pictures align with the target video — <Picture 1> (from [Shot N]) aligns with the S.SS-second mark of the target video.
 ```
 
-instruction 后空一行，再写主体字段。时长、文件名、标题与审核说明不得放在 instruction 前面。源文件保留排版；上传器是否压平需单独确认。
+instruction 后空一行，再写主体字段。时长、文件名、标题与审核说明不得放在 instruction 前面。源文件保留排版；H3 Studio 批量版须按 [studio.md](studio.md) 另加行首时长前缀并压平，前缀属于上传封装，不属于本节模型 instruction。
 
 ## 三个主体字段
 
