@@ -1,0 +1,4 @@
+interface:
+  display_name: "MiniMax H3 提示词"
+  short_description: "编写与检查 H3 视频提示词，区分生成模式、素材用途、对白与声音"
+  default_prompt: "使用 $minimax-h3-prompt 根据我的素材和创意编写 H3 提示词，并检查模式、台词与声音要求是否一致。"
